@@ -1,0 +1,45 @@
+📖 Project Description
+Registration and Login System Using File Handling in C++
+This project is a C++ console-based application that demonstrates a simple yet effective Registration and Login System. It leverages file handling to store and retrieve user credentials securely. This system can be used as a foundational piece in building more advanced systems for authentication and account management.
+
+Key Functionalities
+User Registration:
+
+Ensures that usernames are unique by checking against stored data.
+Automatically generates a unique User ID for each account (e.g., MRW00001).
+Implements password strength validation requiring:
+At least 8 characters.
+Uppercase, lowercase, numeric, and special characters.
+Stores user credentials in a file (record.txt) for persistence.
+User Login:
+
+Validates the username and password entered by the user against the stored records.
+Provides feedback for incorrect credentials and offers the option to retry or register.
+Forgot Password:
+
+Allows users to retrieve their password by providing their username.
+Confirms the existence of the account before displaying the password.
+File Handling:
+
+Credentials are securely stored in record.txt, maintaining persistency even after program termination.
+User IDs are tracked using an id.txt file, ensuring uniqueness.
+Decorative UI:
+
+Text-based UI with headers for each page (Login, Registration, Forgot Password).
+Prompts and messages are designed for an intuitive user experience.
+How It Works
+The program starts with a menu offering four options:
+Login
+Register
+Forgot Password
+Exit
+Based on the user's choice, the respective function (e.g., login(), registration(), etc.) is executed.
+File operations are used for reading and writing user credentials.
+Use Case
+This program serves as a basic blueprint for user authentication in small-scale applications. It can be integrated into larger systems or used for educational purposes to understand file handling and password validation concepts in C++.
+
+Files Used
+record.txt:
+Stores user credentials in the format: UserID Username Password.
+id.txt:
+Keeps track of the last generated User ID.
